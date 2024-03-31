@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XacnhanveFragment">
+
+    <TextView
+        android:id="@+id/ten_nha_xe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="An Anh Limousine"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ten_nha_xe"
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="#B5C0D0"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Nơi Đi"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_noidi_xacnhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sài Gòn"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="94dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Điểm đến"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_noiden_xacnhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sài Gòn"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="94dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Nhà xe"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_ten_nha_xe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="An Anh Limousine"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Giờ xuất phát"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_gio_di"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="23:45"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Ngày khởi hành"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_ngay_di"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14/03/2024"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Tên hành khách"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_ten_hanh_khach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Anh Phan"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="139dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Số điện thoại"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0986179103"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Số lượng"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_so_luong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Mã ghế/ giường"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_ma_ghe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            tools:layout_editor_absoluteY="82dp">
+
+            <TextView
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Tạm tính"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+
+            <TextView
+                android:id="@+id/tv_tam_tinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="400000"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="94dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_xac_nhan_ve"
+        android:layout_width="329dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="@color/app_main_bg"
+        android:text="Xác nhận thông tin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

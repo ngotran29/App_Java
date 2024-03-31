@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Nháp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invalid_email">Địa chỉ Email không hợp lệ</string>
+    <string name="form_submitted">Biểu mẫu của bạn đã được gửi thành công!</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="invalid_password">Mật khẩu không hợp lệ</string>
+    <string name="phone_required">Yêu cầu nhập số điện thoại</string>
+    <string name="invalid_phone">Số điện thoại không hợp lệ</string>
+    <string name="phone_not_in_desired_country">Số điện thoại không thuộc quốc gia mong muốn</string>
+    <string name="phone_parse_error">Lỗi khi phân tích số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="required">Vui lòng nhập</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="submit">Submit</string>
+
+</resources>

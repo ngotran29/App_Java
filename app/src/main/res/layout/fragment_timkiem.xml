@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304FFE"
+    android:orientation="vertical"
+    tools:context=".TimkiemFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/app_main_bg"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="63dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/logo_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="cursive"
+            android:text="Brum Brum!"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_radius"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:background="@drawable/radius_corner" />-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="vertical"
+
+           >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/brg_2"
+                >
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="350dp"
+                    android:layout_height="220dp"
+
+
+                    android:background="@drawable/corner_linear"
+                    android:layout_marginTop="25dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textColor="#446725"
+                        android:layout_marginTop="13dp"
+                        android:text="Nơi xuất phát" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_bus" />
+
+                        <TextView
+                            android:id="@+id/tvNoidi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Chọn điểm bắt đầu"
+
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:textColor="#446725"
+                        android:text="Bạn muốn đi đâu" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_bus" />
+
+                        <TextView
+                            android:id="@+id/tvNoiden"
+                            android:layout_width="326dp"
+                            android:layout_height="50dp"
+                            android:hint="Chọn điểm kết thúc"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_lich" />
+
+                        <TextView
+                            android:id="@+id/tvNgaydi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ngày đi"
+                            android:textColor="#446725"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bttimkiem"
+                    android:layout_width="350dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="38dp"
+                    android:backgroundTint="#BA546D3D"
+                    android:text="Tìm kiếm"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#AEEA00"
+                    android:textColorLink="#AE992B" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/NewsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ưu đãi"
+                        android:textSize="20dp"
+                        />
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/News"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="30dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/NewsTxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sự kiện"
+                        android:textSize="20dp" />
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/News1"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="30dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/NewsTxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tin tức"
+                        android:textSize="20dp" />
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/News2"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="30dp"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+</LinearLayout>

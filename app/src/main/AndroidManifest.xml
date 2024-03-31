@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <package android:name="vn.com.vng.zalopay" />
+        <package android:name="vn.com.vng.zalopay.sbmc" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nhp"
+        tools:targetApi="31">
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".MyProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ThanhToanActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="app"
+                    android:scheme="demozpdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QuanLyVeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CanceledFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ChongheFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ChuyenDiFragment"
+            android:exported="false" />
+        <activity
+            android:name=".CityFragment"
+            android:exported="false" />
+        <activity
+            android:name=".HoantatFragment"
+            android:exported="false" />
+        <activity
+            android:name=".NgaydiFragment"
+            android:exported="false" />
+        <activity
+            android:name=".PresentFragment"
+            android:exported="false" />
+        <activity
+            android:name=".TaikhoanFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ThongbaoFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ThongtinNguoidiFragment"
+            android:exported="false" />
+        <activity
+            android:name=".TimkiemFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Utils"
+            android:exported="false" />
+        <activity
+            android:name=".VeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ViewPagerAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".WentFragment"
+            android:exported="false" />
+        <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnimationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

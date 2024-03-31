@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Màu nền của vùng độ cong -->
+    <corners
+        android:topLeftRadius="11dp"
+        android:topRightRadius="11dp"
+        android:bottomLeftRadius="11dp"
+        android:bottomRightRadius="11dp" />
+</shape>

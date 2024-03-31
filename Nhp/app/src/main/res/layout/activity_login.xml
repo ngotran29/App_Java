@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".LoginActivity">
+
+    <TableLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/anh_dang_nhap">
+
+
+        <TextView
+            android:id="@+id/tvhello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Xin chào"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvdki_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí để tận hưởng nhiều ưu đãi"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN INFORMATION"
+        android:textSize="30sp"
+        android:textColor="#86A7FC"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#D9EDBF"
+        android:hint="UserName"
+        android:padding="2dp"
+        android:drawablePadding="4dp"
+         />
+
+    <EditText
+        android:id="@+id/edPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#D9EDBF"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="4dp"
+         />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:padding="10dp"-->
+<!--        >-->
+
+<!--        <com.hbb20.CountryCodePicker-->
+<!--            android:id="@+id/ccp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:ccp_defaultNameCode="VN"-->
+<!--            app:ccp_showFlag="true"-->
+<!--            app:ccp_showNameCode="true"-->
+<!--            />-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/edt_phone"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:hint="@string/phone_number"-->
+<!--            android:inputType="number"-->
+<!--            android:lines="1"-->
+<!--            android:padding="20dp"/>-->
+
+<!--    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Register" />
+</LinearLayout>

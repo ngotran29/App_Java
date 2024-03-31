@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "489276664401",
+    "firebase_url": "https://mobile-aee66-default-rtdb.firebaseio.com",
+    "project_id": "mobile-aee66",
+    "storage_bucket": "mobile-aee66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489276664401:android:40b22d7b4d129d7f786670",
+        "android_client_info": {
+          "package_name": "com.example.nhp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB--WoHSUg5cVhCwmt15kNT51n9bmZhZko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

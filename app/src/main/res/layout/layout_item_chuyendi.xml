@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="172dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFDCB"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+
+
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_gio_di"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="20:30"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_gio_den"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="40dp"
+                    android:text="04:00"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_circle" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_location" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_item_tinh_di"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hồ chí minh" />
+
+                <TextView
+                    android:id="@+id/tv_item_tinh_den"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:text="Đà lạt" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:layout_width="194dp"
+                android:layout_height="38dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_gia_ve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="3000000 đ"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/im_item_chuyen_di"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/tv_item_ten_nha_xe"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:text="Tên nhà xe"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_gravity="bottom"
+                android:id="@+id/bt_item_chon_chuyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC700"
+                android:text="Chọn chuyến" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
